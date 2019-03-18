@@ -1,0 +1,25 @@
+{
+  "name": "optics",
+  "version": "1.0.0",
+  "description": "test task for onlinebees",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ythotha/optics.git"
+  },
+  "author": "Yaroslav Ponomarenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ythotha/optics/issues"
+  },
+  "homepage": "https://github.com/Ythotha/optics#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-less": "^4.0.1"
+  }
+}
