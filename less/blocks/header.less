@@ -1,15 +1,17 @@
 @hamburger-transition: 0.2s;
 
 .header{
+  box-sizing: border-box;
+  position: relative;
   padding-top: 1rem;
+
+  background-color: @white;
 }
-.header-container{
+.header__container{
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-bottom: 2rem;
-
-  border-bottom: .2rem solid @green;
 }
 .header__logo{
   display: flex;
@@ -39,7 +41,7 @@
 .header__link{
   display: flex;
 
-  font-family: "Roboto Light";
+  font-family: "Roboto Light", sans-serif;
   font-size: 1.6rem;
 }
 .header__link:hover{
@@ -99,10 +101,21 @@
 }
 
 .header__nav{
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 2;
+
   visibility: hidden;
+  opacity: 0;
+
+  background-color: inherit;
+  transition: .5s;
 }
 .header__nav_open{
   visibility: visible;
+  opacity: 1;
 }
 .header__nav-item{
   border-bottom: .1rem solid lighten(@grey, 50%);
@@ -114,6 +127,8 @@
   font-family: NotoSerif-Bold, serif;
   font-size: 2rem;
   text-align: center;
+
+  transition: .5s;
 }
 .header__nav-link:hover{
   background-color: @green;
@@ -158,6 +173,9 @@
   }
 }
 @media (min-width: 1023px){
+  .header__container{
+    border-bottom: .2rem solid @green;
+  }
   .header__contacts{
     display: flex;
     align-items: center;
@@ -170,7 +188,10 @@
     display: none;
   }
   .header__nav{
+    position: relative;
+
     visibility: visible;
+    opacity: 1;
   }
   .header__nav-list{
     display: flex;
