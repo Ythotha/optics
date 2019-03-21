@@ -1,0 +1,44 @@
+.statistics{
+  margin-top: 3rem;
+
+  background-image: url("../img/statistics/glasses-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.statistics__item{
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+.statistics__item:last-child{
+  margin-bottom: 4rem;
+}
+.statistics__title{
+  color: @purple;
+  font-size: 6rem;
+  font-family: NotoSerif-Bold, serif;
+  font-weight: 700;
+}
+.statistics__text{
+  font-family: "Roboto Bold", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+@media (min-width: 1023px) {
+  .statistics{
+    margin-top: 9rem;
+  }
+  .statistics__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .statistics__item{
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+  .statistics__title{
+    font-size: 8rem;
+  }
+}
