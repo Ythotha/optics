@@ -1,15 +1,13 @@
 .statistics{
-  margin-top: 3rem;
-
   background-image: url("../img/statistics/glasses-background.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 .statistics__item{
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 .statistics__item:last-child{
   margin-bottom: 4rem;
@@ -28,15 +26,14 @@
 
 @media (min-width: 1023px) {
   .statistics{
-    margin-top: 9rem;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+
+    background-attachment: fixed;
   }
   .statistics__wrapper {
     display: flex;
     justify-content: space-between;
-  }
-  .statistics__item{
-    padding-top: 12rem;
-    padding-bottom: 12rem;
   }
   .statistics__title{
     font-size: 8rem;
