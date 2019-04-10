@@ -2,71 +2,72 @@
   background-image: url("../img/form/form-background.png");
   background-repeat: no-repeat;
   background-size: cover;
-}
-.contact-form__container{
-  max-width: 55rem;
-  margin-left: auto;
-  padding: 4rem;
 
-  background-color: @purple-transparent; //rgba(116, 69, 160, 0.8);
-}
-.contact-form__header{
-  margin-bottom: 4rem;
-}
-.contact-form__title{
-  color: @white;
-}
-.contact-form__box{
-  border-radius: .2rem;
-}
-.contact-form__box:not(:last-child){
-  margin-bottom: 1.5rem;
-}
-.contact-form__label{
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
-.contact-form__field{
-  box-sizing: border-box;
-  width: 100%;
-  padding: 1.25rem;
+  &__container{
+    max-width: 55rem;
+    margin-left: auto;
+    padding: 4rem;
 
-  border: none;
+    background-color: @purple-transparent; //rgba(116, 69, 160, 0.8);
+  }
+  &__row{
+    @media (min-width: 599px){
+      display: flex;
+    }
+  }
+  &__header{
+    margin-bottom: 4rem;
+  }
+  &__title{
+    color: @white;
+  }
+  &__box{
+    border-radius: .2rem;
+  }
+  &__box:not(:last-child){
+    margin-bottom: 1.5rem;
+  }
+  &__label{
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+  }
+  &__field{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1.25rem;
 
-  font-family: "Roboto Regular", sans-serif;
-  font-size: 1.6rem;
-}
-.contact-form__field::placeholder{
-  color: @grey;
-}
-.contact-form__field_message{
-  min-height: 16rem;
-}
-.contact-form__button{
-  margin-top: 1.5rem;
-  padding: 1rem 4rem;
-  border: none;
+    border: none;
 
-  font-family: "Roboto Regular", sans-serif;
+    font-family: "Roboto Regular", sans-serif;
+    font-size: 1.6rem;
+  }
+  &__field::placeholder{
+    color: @grey;
+  }
+  &__field_message{
+    min-height: 16rem;
+  }
+  &__button{
+    margin-top: 1.5rem;
+    padding: 1rem 4rem;
+    border: none;
 
-  cursor: pointer;
-}
-.contact-form__checkbox-label{
- display: block;
+    font-family: "Roboto Regular", sans-serif;
 
- font-size: 1.4rem;
- color: @white;
-}
- 
-@media (min-width: 599px) {
- .contact-form__row{
-   display: flex;
- }
- .contact-form__button{
-   margin-top: 0;
-   margin-left: 2rem;
- }
+    cursor: pointer;
+
+    @media (min-width: 599px){
+      margin-top: 0;
+      margin-left: 2rem;
+    }
+  }
+  &__checkbox-label{
+    display: block;
+
+    font-size: 1.4rem;
+    color: @white;
+  }
 }

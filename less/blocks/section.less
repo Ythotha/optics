@@ -3,23 +3,25 @@
   padding-bottom: 1.5rem;
 
   color: @grey;
-}
-.section_centered-text{
-  text-align: center;
-}
-.section__content{
-  display: flex;
-}
-.section__title{
-  font-size: 3rem;
-}
 
-@media (min-width: 1023px) {
-  .section{
+  @media (min-width: 1023px){
     padding-top: 4.5rem;
     padding-bottom: 4.5rem;
   }
-  .section__title{
-    font-size: 4.8rem;
+
+  &__title{
+    @media (min-width: 1023px){
+      font-size: 4.8rem;
+    }
+  }
+
+  &_centered-text{
+    text-align: center;
+  }
+  &__content{
+    display: flex;
+  }
+  &__title{
+    font-size: 3rem;
   }
 }

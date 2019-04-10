@@ -1,14 +1,20 @@
-@import "blocks/colors";
-@import "blocks/fonts";
+@import "variables";
+@import "fonts";
 
 html {
   font-size: 62.5%;
 }
 
 body{
-  font-family: "Roboto Regular", sans-serif;
-
   margin: 0;
+  padding-top: 7.7rem;
+
+  font-family: "Roboto Regular", sans-serif;
+  font-size: 1.6rem;
+
+  @media (min-width: 1023px){
+    padding-top: 14.2rem;
+  }
 }
 
 @import "blocks/link";
@@ -18,12 +24,16 @@ body{
 @import "blocks/main-container";
 @import "blocks/section";
 @import "blocks/button";
+@import "blocks/hamburger";
 @import "blocks/header";
+@import "blocks/owl-carousel";
 @import "blocks/slider";
 @import "blocks/our-advantages";
 @import "blocks/services";
+@import "blocks/service";
 @import "blocks/about";
 @import "blocks/statistics";
 @import "blocks/promo";
 @import "blocks/form";
 @import "blocks/footer";
+@import "blocks/developer";

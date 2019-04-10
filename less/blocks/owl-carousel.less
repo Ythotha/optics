@@ -1,0 +1,50 @@
+.owl-nav{
+  font-size: 5rem;
+}
+.owl-prev, .owl-next {
+  display: none;
+}
+.owl-dots{
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (min-width: 767px) {
+  .owl-prev, .owl-next{
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: @green;
+
+    font-size: 6rem;
+    color:@white;
+
+    border:none;
+    padding:0;
+  }
+  .owl-prev span, .owl-next span{
+    display: block;
+    transform: translateY( -1.4rem)
+  }
+  .owl-prev:hover, .owl-next:hover{
+    background-color: @white;
+    color: @green;
+  }
+  .owl-prev{
+    left: 1rem;
+  }
+  .owl-next{
+    right: 1rem;
+  }
+  .owl-next,
+  .owl-prev{
+    outline: none;
+  }
+}
